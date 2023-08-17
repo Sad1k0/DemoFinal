@@ -68,8 +68,8 @@ jobs:
         id: build_image
         env:
           REGISTRY: ghcr.io
-          IMAGE_NAME: demofinal
-          ECR_REPOSITORY: demofinal
+          IMAGE_NAME: demofinal2
+          ECR_REPOSITORY: demofinal2
           IMAGE_TAG: ${{ env.IMAGE_TAG }}
         run: |
           ECR_REPOSITORY=$(echo $ECR_REPOSITORY|awk '{print tolower($0)}')
